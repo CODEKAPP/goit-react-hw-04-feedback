@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <section>
       <DivContainer>
-        <FeedbackWidget />
+        <FeedbackWidget  />
       </DivContainer>
       <Toaster /> {/* Agrega el componente Toaster */}
     </section>

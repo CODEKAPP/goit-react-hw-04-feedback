@@ -1,6 +1,5 @@
-// FeedbackWidget.jsx
+//FeedbackWidget.jsx
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import Statistics from './Statistics';
 import FeedbackOptions from './FeedbackOptions';
 import Section from './Section';
@@ -52,14 +51,6 @@ const FeedbackWidget = () => {
       )}
     </Section>
   );
-};
-
-FeedbackWidget.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default FeedbackWidget;

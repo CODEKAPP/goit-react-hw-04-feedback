@@ -8,9 +8,9 @@ import {
 import { StatisticsTitle } from './Styles/TitleStyles';
 import {
   Paragraph,
-  Paragraph2,
-  Paragraph3,
-  Paragraph4,
+  DivStyleParagraph,
+  SpanStyle,
+  SpanStyle2,
 } from './Styles/ParagraphStyles';
 
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
@@ -18,23 +18,23 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
     <DivContainerStatistics>
       <StatisticsTitle>Statistics</StatisticsTitle>
       <DivContainerStatisticsParagraph>
-        <Paragraph2>
+        <DivStyleParagraph>
           Good
           <Paragraph>{good}</Paragraph>
-        </Paragraph2>
-        <Paragraph2>
+        </DivStyleParagraph>
+        <DivStyleParagraph>
           Neutral <Paragraph>{neutral}</Paragraph>
-        </Paragraph2>
-        <Paragraph2>
+        </DivStyleParagraph>
+        <DivStyleParagraph>
           Bad <Paragraph>{bad}</Paragraph>
-        </Paragraph2>
-        <Paragraph2>
+        </DivStyleParagraph>
+        <DivStyleParagraph>
           Total <Paragraph>{total}</Paragraph>
-        </Paragraph2>
+        </DivStyleParagraph>
       </DivContainerStatisticsParagraph>
-      <Paragraph3>
-        Positive feedback:<Paragraph4>{positivePercentage}%</Paragraph4>
-      </Paragraph3>
+      <SpanStyle>
+        Positive feedback:<SpanStyle2>{positivePercentage}%</SpanStyle2>
+      </SpanStyle>
     </DivContainerStatistics>
   );
 };

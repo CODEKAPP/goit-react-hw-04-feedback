@@ -11,7 +11,7 @@ export const Paragraph = styled.p`
 `;
 
 // Estilos para el h2
-export const Paragraph2 = styled(Paragraph)`
+export const DivStyleParagraph = styled.div`
   /* background-color: green; */
   font-weight: 700;
   font-size: 16px;
@@ -24,7 +24,7 @@ export const Paragraph2 = styled(Paragraph)`
   /* align-content: center; */
   flex-direction: column;
 `;
-export const Paragraph3 = styled(Paragraph)`
+export const SpanStyle = styled.span`
   /* background-color: green; */
   font-weight: 700;
   font-size: 16px;
@@ -34,7 +34,7 @@ export const Paragraph3 = styled(Paragraph)`
   flex-direction: row;
   /* text-shadow: 5px 5px #558abb; */
 `;
-export const Paragraph4 = styled(Paragraph)`
+export const SpanStyle2 = styled.span`
   /* background-color: green; */
   padding-left: 20px;
   text-shadow: #b1917c 3px 3px 5px;
