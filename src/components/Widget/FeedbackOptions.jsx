@@ -1,3 +1,4 @@
+//FeedbackOptions.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
@@ -20,11 +21,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <>
       <StyledH2>Please Leave Feedback</StyledH2>
-      {/* {options.map(option => (
-        <button key={option} onClick={() => onLeaveFeedback(option)}>
-          {option}
-        </button>
-      ))} */}
 
       <DivContainerButtons>
         {options.map(option => {
@@ -39,26 +35,6 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           );
         })}
       </DivContainerButtons>
-
-      {/* <DivContainerButtons>
-        {options.map(option => (
-          <React.Fragment key={option}>
-            {option === 'good' && (
-              <GoodButton onClick={() => onLeaveFeedback(option)}>
-                Good
-              </GoodButton>
-            )}
-            {option === 'neutral' && (
-              <NeutralButton onClick={() => onLeaveFeedback(option)}>
-                Neutral
-              </NeutralButton>
-            )}
-            {option === 'bad' && (
-              <BadButton onClick={() => onLeaveFeedback(option)}>Bad</BadButton>
-            )}
-          </React.Fragment>
-        ))}
-      </DivContainerButtons> */}
     </>
   );
 };
